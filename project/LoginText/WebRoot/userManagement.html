@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/userManagement.css" rel="stylesheet" />
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/userManagement.js"></script>
+</head>
+<body>
+<div id="fade" class="black_overlay"></div>
+<div id="MyDiv" class="white_content">
+    <div style="text-align: right; height: 20px; margin-right: 15px; margin-top: 3px">
+        <span style="font-size: 24px; cursor: pointer" title="点击关闭" onclick="CloseDiv('MyDiv', 'fade')">x</span>
+    </div>
+
+    <form>
+        <h3>用户修改</h3>
+
+        <div id="new_userNameDiv">
+            <input type="text" id="new_userName" placeholder="输入用户名">
+        </div>
+
+        <div id="charNameDiv">
+            <input type="text" id="new_charName" placeholder="输入昵称">
+        </div>
+
+        <div id="emailDiv">
+            <input type="email" id="new_email" placeholder="输入邮箱">
+        </div>
+
+        <div id="provinceDiv">
+            <input type="text" id="new_province" placeholder="输入省份">
+        </div>
+
+        <div id="cityDiv">
+            <input type="text" id="new_city" placeholder="输入城市">
+        </div>
+
+        <div>
+            <input type="password" placeholder="输入密码" id="new_password">
+        </div>
+
+        <div>
+            <input type="password" placeholder="确认密码" id="new_password1">
+        </div>
+
+        <div id="confirmDiv">
+            <a href="#" id="confirmBtn">确定</a>
+        </div>
+    </form>
+
+</div>
+<div class="pageBody">
+    <!--  顶部  -->
+    <div class="search">
+        <!--  搜索框    -->
+        <form class="searchForm">
+            <input id="action" name="action" value="none" type="text" hidden/>
+            <input type="text" name="userName" id="userName" placeholder="输入用户名">
+            <input type="text" name="chrName" id="chrName" placeholder="输入姓名">
+            <input type="text" name="mail" id="mail" placeholder="输入邮箱">
+            <input type="text" name="provinceName" id="provinceName" placeholder="输入省份">
+        </form>
+        <!--   CRUD 按钮     -->
+        <div id="bt">
+            <a href="#" id="btSearch">查找</a>
+            <a href="#" id="btClear" onclick="btClear()">清空</a>
+            <a href="#" id="btAdd">增加</a>
+            <a href="#" id="btDelete">删除</a>
+            <!--            <a href="#" id="btUpdate">修改</a>-->
+        </div>
+    </div>
+
+
+    <!--  表格  -->
+    <table>
+        <!-- 表格标题        -->
+        <thead>
+        <tr>
+            <th width="40"><input type="checkbox" id="ckAll" title="全选"/></th>
+            <th class="bg" id="sortByUserName" data="userName">用户名</th>
+            <th width="110">中文名</th>
+            <th>邮箱</th>
+            <th width="70" class="bg" id="sortByProvinceNMame" data="provinceName">省份</th>
+            <th width="70">城市</th>
+            <th width="120" colspan="2">操作</th>
+        </tr>
+        </thead>
+        <!-- 用户信息表格内容       -->
+        <tbody>
+        <tr>
+            <td><input type="checkbox" value="username01"></td>
+            <td>1001</td>
+            <td>tom</td>
+            <td>男</td>
+            <td>四川</td>
+            <td>成都</td>
+            <td><a class="tdDel" value="1">删除</a></td>
+            <td><a class="tdUpdate" value="edit1">修改</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" value="username02"></td>
+            <td>1001</td>
+            <td>tom</td>
+            <td>男</td>
+            <td>四川</td>
+            <td>成都</td>
+            <td><a class="tdDel" value="2">删除</a></td>
+            <td><a class="tdUpdate" value="edit2">修改</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- 底部导航   -->
+    <div class="paging">
+        <!-- 页数统计        -->
+        <div class="pageSize">
+            每页<select id="pageSize">
+            <option>5</option>
+            <option>10</option>
+            <option>20</option>
+        </select>条数据，
+            共<span id="total">6</span>条数据，
+            <span id="pageNumber">1</span>页/<span id="pageCount">2</span>页
+        </div>
+
+        <!-- 首尾页和附近几页的导航        -->
+        <div class="pageNav">
+            <a href="#" id="first">首页</a>
+            <a href="#" id="back">上一页</a>
+            <a href="#" id="next">下一页</a>
+            <a href="#" id="last">尾页</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

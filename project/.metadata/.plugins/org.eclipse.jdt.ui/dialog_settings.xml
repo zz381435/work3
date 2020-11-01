@@ -60,7 +60,7 @@
 		<item value="false" key="create_doinitdestroy"/>
 		<item value="false" key="create_unimplemented"/>
 		<item value="false" key="create_main"/>
-		<item value="true" key="create_dopost"/>
+		<item value="false" key="create_dopost"/>
 		<item value="false" key="create_doput"/>
 	</section>
 	<section name="JavaElementSearchActions">

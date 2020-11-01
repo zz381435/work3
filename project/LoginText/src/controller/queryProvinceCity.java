@@ -32,6 +32,9 @@ public class queryProvinceCity extends HttpServlet {
 		if (provinceCode == null) { //没有请求参数provinceCode， 表示查询所有省份列表
 			ArrayList<Province> list = dao.queryProvince();
 			jsonStr = new Gson().toJson(list);
+		} else { //按provinceCode查询对应的城市列表
+			ArrayList<City> list = dao.queryCity(provinceCode);
+			jsonStr = new Gson().toJson(list);
 		}
 		//字符流输出字符串
 		response.setContentType("text/html;charset=utf-8");

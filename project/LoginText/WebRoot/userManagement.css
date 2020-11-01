@@ -1,0 +1,161 @@
+a:hover{
+    background-color: #bf6d2f;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pageBody{
+    width: 70%;
+    height: auto;
+    margin: 100px auto;  /* 块级元素居中 设置了 width 情况下 这样设置居中 */
+    /*text-align: left; !*  行内元素居中 *!*/
+}
+
+.search{
+    width: 90%;
+}
+
+.searchForm{
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.searchForm input{
+    width: 70px;
+    height: 15px;
+    padding: 5px;
+    border: #e7e7ba solid 2px;
+    margin-right: 18px;
+}
+
+#bt{
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+#bt a{
+    text-decoration: none;
+    margin: 0 7px 0 7px;
+}
+
+#bt a:visited{
+    color: blue;
+}
+
+table{
+    margin: 0 0 20px 0;
+    border: #d6c5ba solid 2px;
+    border-radius: 2px;
+}
+
+table thead{
+    background-color: #8EC5FC;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+table thead tr{
+
+}
+
+table thead tr th{
+    border-right: #8EC5FC solid 1px;
+}
+
+table tbody{
+    background-color: #ffffff;
+}
+
+.tr_even{
+    background-color: #a4dbe2;
+}
+
+.tr_odd{
+    background-color: #f1eaea;
+}
+
+/* 表格中鼠标悬停行的颜色*/
+.tr_hover{
+    background-color: #5dae78;
+}
+
+/* 表格中选中元素的颜色 */
+.tr_selected{
+    background-color: #2b7e66;
+}
+
+.paging{
+}
+
+.pageSize{
+    margin-bottom: 15px;
+}
+
+#pageSize{
+
+}
+
+#pageNumber{
+    color: red;
+}
+
+.pageNav{
+    font-size: 18px;
+}
+
+.pageNav a{
+
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(187, 184, 184);
+    z-index: 1001;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.white_content{
+    display: none;
+    position: absolute;
+    width: 390px;
+    left: 20%;
+    top: 15%;
+    border: 6px solid lightblue;
+    border-radius: 1em;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+form{
+    text-align: center;
+}
+
+form input{
+    margin-top: 20px;
+    height: 23px;
+    text-align: center;
+}
+
+#confirmDiv{
+    width: 170px;
+    margin: 25px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #1890FF;
+    border-radius: 1em;
+    text-align: center;
+}
+
+#confirmBtn{
+    color: white;
+}
